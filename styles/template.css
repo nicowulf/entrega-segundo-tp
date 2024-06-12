@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: HARRYP;
+    src: url(../assets/fonts/HARRYP__.TTF);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+:root {
+    --primary-color-dark: #121212;
+    --secondary-color-dark: #2b2e2c;
+    --tertiary-color-dark: #4a4a4a;
+    --complementary-color-dark: #f1cb3e;
+    --text-color-dark: #f2f2f2;
+    --primary-color-light: #2d6d91;
+    --secondary-color-light: #e4f0e8;
+    --tertiary-color-light: #3b8fbf;
+    --complementary-color-light: #f1cb3e;
+    --text-color-light: #0a0a0a;
+    --font-family-titles: HARRYP,
+        Gillman Sans,
+        'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+    --font-family-texts: Montserrat,
+        'Gill Sans',
+        'Gill Sans MT',
+        Calibri,
+        'Trebuchet MS',
+        sans-serif;
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family: var(--font-family-titles);
+}
+
+p, h4, li, ul {
+    font-family: var(--font-family-texts);
+}

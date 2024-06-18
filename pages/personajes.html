@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/img/logo/transparent-harry-potter-logo.png">
     <title>Personajes - Proyecto Harry Potter</title>
     <link rel="stylesheet" href="../styles/template.css">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <header>
@@ -16,19 +18,21 @@
         </ul>
       </nav>
     </header>
-
+    
     <main>
       <section id="characters">
         <h1>Personajes</h1>
+        <!-- Barra de búsqueda -->
+        <h3></h3>
         <div>
-          <!-- Barra de búsqueda FILTER -->
-          <input type="text">
-          <button></button>
+            <i class='bx bx-search-alt'></i>
+            <input type="text" placeholder="Busca un personaje" id="filter" class="filter" autocomplete="off">
         </div>
-        <div class="char-grid">
+        <div class="grid" id="grid">
           <!-- Aquí se insertarán las tarjetas de los personajes dinámicamente -->
         </div>
       </section>
+      <button type="button" id="scrollToTopBtn">↑</button>
       <script src="../app/personajes.js"></script>
     </main>
 

@@ -16,26 +16,26 @@
 
 :root {
     --primary-color-dark: #121212;
-    --secondary-color-dark: #2b2e2c;
-    --tertiary-color-dark: #4a4a4a;
+    --secondary-color-dark: #4a4a4a;
+    --tertiary-color-dark: #2b2e2c;
     --complementary-color-dark: #f1cb3e;
     --text-color-dark: #f2f2f2;
-    --primary-color-light: #2d6d91;
-    --secondary-color-light: #e4f0e8;
-    --tertiary-color-light: #3b8fbf;
+    --primary-color-light: #78afcf;
+    --secondary-color-light: #dee1e2;
+    --tertiary-color-light: #9dd0ee;
     --complementary-color-light: #f1cb3e;
-    --text-color-light: #0a0a0a;
+    --text-color-light: #141414;
     --font-family-titles: HARRYP,
-        Gillman Sans,
+        'Gill Sans',
         'Segoe UI',
         Tahoma,
         Geneva,
         Verdana,
         sans-serif;
     --font-family-texts: Montserrat,
+        Calibri,
         'Gill Sans',
         'Gill Sans MT',
-        Calibri,
         'Trebuchet MS',
         sans-serif;
 }

@@ -4,15 +4,15 @@ const renderHouses = () => {
     const houses = [
         {  
             name: "Gryffindor",
-            img: "../assets/img/houses/gryff.webp",
+            img: "../assets/img/houses/gryff.png",
             phrase: "Donde habitan los valientes de corazón, su audacia, su valor y su caballerosidad distinguen a los Gryffindors.",
-            values: ["Valentía", "Audacia", "Lealtad", "Honestidad", "Caballerosidad"],
+            values: ["Valentía", "Audacia", "Lealtad", "Honestidad"],
             founder: "Godric Gryffindor",
-            members: ["Harry Potter", "Hermione Granger", "Ron Weasley", "Albus Dumbledore", "Ginny Weasley"],
+            members: ["Harry Potter", "Hermione Granger", "Ron Weasley", "Albus Dumbledore"],
         },
         {
             name: "Slytherin",
-            img: "../assets/img/houses/sly.webp",
+            img: "../assets/img/houses/sly.png",
             phrase: "Esa gente astuta que utiliza cualquier medio para lograr sus fines",
             values: ["Astucia", "Ambición", "Determinación", "Liderazgo", "Sangre"],
             founder: "Salazar Slytherin",
@@ -20,7 +20,7 @@ const renderHouses = () => {
         },
         {
             name: "Hufflepuff",
-            img: "../assets/img/houses/huff.webp",
+            img: "../assets/img/houses/huff.png",
             phrase: "Donde son justos y leales, esos pacientes Hufflepuffs son sinceros y no temen el trabajo duro.",
             values: ["Lealtad", "Trabajo Duro", "Justicia", "Amabilidad", "Tolerancia"],
             founder: "Helga Hufflepuff",
@@ -28,7 +28,7 @@ const renderHouses = () => {
         },
         {
             name: "Ravenclaw",
-            img: "../assets/img/houses/rav.webp",
+            img: "../assets/img/houses/rav.png",
             phrase:"Donde aquellos con ingenio y conocimiento siempre encontrarán a los de su clase.",
             values: ["Intelecto", "Creatividad", "Originalidad", "Integridad", "Sabiduría"],
             founder: "Rowena Ravenclaw",
@@ -45,24 +45,26 @@ const renderHouses = () => {
         const stringOfMembers = arrayOfMembers.join("");
 
         housesList.innerHTML += `
-             <article class="${house.name}">
-                 <div>
+              <div class= "card-container">
+                <div class="card-${house.name}">
+                  <div class="front-content">
                      <img src="${house.img}" alt="imagen de ${house.name}">
-                     <p>${house.phrase}</p>
-                 </div>
-                 <div>
-                     <h4>Valores:</h4>
+                  </div>
+                  <div class="content">
+                     <p class="phrase">${house.phrase}</p>
+                     <h4 class="heading">Valores:</h4>
                      <ul>
                          ${stringOfValues}
                      </ul>
-                     <h4>Fundador:</h4>
+                     <h4 class="heading">Fundador:</h4>
                      <p>${house.founder}</p>
-                     <h4>Integrantes Notables:</h4>
+                     <h4 class="heading">Integrantes Notables:</h4>
                      <ul>
                          ${stringOfMembers}
-                     </ul>
-                 </div>
-             </article>        
+                    </ul>
+                  </div>
+                </div>
+              </div>
          `;
 
 })
@@ -316,7 +318,7 @@ const renderBooks = () => {
                 <p>Editorial Salamandra</p>
               </div>
               <div class="book-link">
-                    <button class="spoiler-btn" <a href=="${book.link}">Ir a comprar</a></button>
+                    <button class="link-btn" <a href="${book.link}" target= "_blank">Ir a comprar</a></button>
               </div>    
             </article>        
         `;

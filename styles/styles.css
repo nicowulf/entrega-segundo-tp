@@ -1,6 +1,6 @@
 header {
-  background-color: #343a40;
-  color: white;
+  background-color: var(--primary-color-dark);
+  color: var(--text-color-dark);
   padding: 1em 0;
 }
 
@@ -16,26 +16,176 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--text-color-dark);
   text-decoration: none;
+  font-size: 2rem;
 }
 
 main {
-  padding: 2em;
   text-align: center;
+  background-color: var(--secondary-color-dark);
+  color: var(--text-color-dark);
 }
 
 .s-intro {
-  max-width: 800px;
+  min-height: 70vh;
   margin: 0 auto;
+  padding: 1em 0;
+  background: url(../assets/img/walls/wallpaperflare.com_wallpaper1.webp);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
-footer {
-  background-color: #343a40;
-  color: white;
-  text-align: center;
-  padding: 1em 0;
-  /* position: fixed; 
+.welcome {
+  margin: 0px auto;
+  width: 60%;
+  border-radius: 28px;
+  background: rgba(107, 103, 103, 0.6);
+  box-shadow: 3px 3px 3px #888686;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome h1{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.welcome p{
+  margin: 0.3em;
+  padding: 0.2em;
+}
+
+.welcome p a{
+  text-decoration: none;
+  color: var(--text-color-dark);
+  font-family: var(--font-family-texts);
+}
+
+.s-houses h2 {
+  padding: 20px;
+}
+
+#houses-list{
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-bottom: 2em;
+  padding: 2em;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+#houses-list div li {
+  list-style: none;
+}
+
+#houses-list div h4 {
+  font-size: 0.9em;
+}
+
+#houses-list div li,
+#houses-list div p {
+  font-size: 0.75em;
+}
+
+.card-Gryffindor {
+  background: rgb(140, 20, 16);
+    background: linear-gradient(180deg, rgba(140, 20, 16, 1) 46%, rgba(222, 141, 48, 1) 70%);
+}
+.card-Slytherin {
+  background: rgb(27, 111, 53);
+    background: linear-gradient(180deg, rgba(27, 111, 53, 1) 40%, rgba(238, 240, 240, 1) 77%);
+}
+.card-Hufflepuff {
+  background: rgb(223, 185, 41);
+    background: linear-gradient(180deg, rgba(223, 185, 41, 1) 39%, rgba(26, 31, 33, 1) 74%);
+}
+.card-Ravenclaw {
+  background: rgb(12, 55, 100);
+    background: linear-gradient(180deg, rgba(12, 55, 100, 1) 49%, rgba(139, 152, 161, 1) 65%);
+}
+
+.card-container {
+  width: 350px;
+  height: 380px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card {
   width: 100%;
-  bottom: 0; */
+  height: 100%;
+  border-radius: inherit;
+}
+
+.front-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background: var(--tertiary-color-dark);
+  color: var(--text-color-dark);
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+  pointer-events: none;
+  transform: translateY(96%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card-Gryffindor .content .heading, .card-Slytherin .content .heading, .card-Hufflepuff .content .heading, .card-Ravenclaw .content .heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card-Gryffindor:hover .content, .card-Slytherin:hover .content, .card-Hufflepuff:hover .content, .card-Ravenclaw:hover .content {
+  transform: translateY(0);
+}
+
+.card-Gryffindor:hover .front-content, .card-Slytherin:hover .front-content,.card-Hufflepuff:hover .front-content, .card-Ravenclaw:hover .front-content {
+  transform: translateY(-30%);
+}
+
+.card-Gryffindor:hover .front-content img, .card-Slytherin:hover .front-content img, .card-Hufflepuff:hover .front-content img, .card-Ravenclaw:hover .front-content img {
+  opacity: 0;
+}
+
+
+footer {
+  background-color: var(--primary-color-dark);
+  color: var(--text-color-dark);
+  text-align: center;
+  margin-top: 30px;
+  padding: 1em 0;
+  position: fixed; 
+  width: 100%;
+  bottom: 0;
 }

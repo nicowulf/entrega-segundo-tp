@@ -7,11 +7,7 @@
 ## Next
  <i class='bx bx-right-arrow-alt'></i>
 
-## First
-<i class='bx bx-arrow-to-left'></i>
-
-## Last
-<i class='bx bx-arrow-to-right' style='color:#ffffff' ></i>
-
 ## PageUp
 ### <i class='bx bx-chevrons-up'></i>
+
+

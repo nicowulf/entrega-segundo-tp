@@ -44,8 +44,7 @@ const renderHouses = () => {
         const stringOfValues = arrayOfValues.join("");
         const stringOfMembers = arrayOfMembers.join("");
 
-    
-         housesList.innerHTML += `
+        housesList.innerHTML += `
              <article class="${house.name}">
                  <div>
                      <img src="${house.img}" alt="imagen de ${house.name}">
@@ -69,6 +68,189 @@ const renderHouses = () => {
 })
 };
 
+const renderSpells = () => {
+    const spellsList = document.getElementById("spells-list");
+
+    const spells = [
+      {
+        name: "Expecto Patronum",
+        description:
+          "Este hechizo se utiliza para conjurar un Patronus, una forma de energía positiva que repele los Dementores, seres que se alimentan de felicidad y dejan a su paso una sensación de frío y desesperación.",
+        img: "../assets/gifs/expectopatronum.webp",
+      },
+      {
+        name: "Expelliarmus",
+        description:
+          "Un hechizo que desarma a un oponente, haciendo que su varita salga volando de su mano. Es utilizado principalmente para desarmar en lugar de causar daño.",
+        img: "../assets/gifs/expelliarmus.webp",
+      },
+      {
+        name: "Alohomora",
+        description:
+          "Abre cerraduras y puertas cerradas. Es especialmente útil para acceder a lugares cerrados o bloqueados.",
+        img: "../assets/gifs/alohomora.webp",
+      },
+      {
+        name: "Avada Kedavra",
+        description:
+          "Uno de los tres hechizos imperdonables, Avada Kedavra es una maldición asesina que causa la muerte instantánea a su objetivo. Es uno de los hechizos más oscuros y está prohibido por la ley mágica.",
+        img: "../assets/gifs/absnot.webp",
+      },
+      {
+        name: "Wingardium Leviosa",
+        description:
+          "Un hechizo encantador que levita objetos. Es uno de los primeros hechizos que los estudiantes de Hogwarts aprenden en clase de Encantamientos.",
+        img: "../assets/gifs/leviosa.webp",
+      },
+      {
+        name: "Accio",
+        description:
+          "El hechizo de convocatoria. Se utiliza para atraer objetos hacia el lanzador, incluso si están fuera de su alcance físico.",
+        img: "../assets/gifs/Accio_Harry_Potter.webp",
+      },
+      {
+        name: "Lumos",
+        description:
+          "Enciende la punta de la varita del lanzador, proporcionando una fuente de luz en la oscuridad. Es útil para explorar lugares oscuros",
+        img: "../assets/gifs/lumos.webp",
+      },
+      {
+        name: "Crucio",
+        description:
+          "Otra de las maldiciones imperdonables, Crucio es una maldición torturadora que causa un dolor extremo al objetivo. Es utilizada como herramienta de tortura por los seguidores de Lord Voldemort.",
+        img: "../assets/gifs/ofCourseNot.webp",
+      },
+      {
+        name: "Imperio",
+        description:
+          "La tercera maldición imperdonable, Imperio permite al lanzador controlar completamente las acciones de la víctima. Es utilizado para manipular y controlar a otras personas.",
+        img: "../assets/gifs/nosepue.webp",
+      },
+    ];
+
+    spells.forEach((spell) => {
+        spellsList.innerHTML += `
+            <li>
+                <div>
+                    <h4>${spell.name}</h4>
+                    <p>${spell.description}</p>
+                    <img src="${spell.img}" alt="imagen de ${spell.name}">
+                </div>
+            </li>
+        
+        `;
+    })    
+};
+
+const renderMovies = () => {
+  const moviesList = document.getElementById("movies-list");
+
+  const movies = [
+    {
+      cover: "../assets/img/movs/HP1.webp",
+      title: "Harry Potter y la Piedra Filosofal",
+      synopsis:
+        "Un huérfano entra a una escuela de magia y hechicería donde se dará cuenta de la verdad sobre su familia, de sí mismo y del mal que asecha el mundo mágico.",
+      year: 2001,
+      duration: "2h 32m",
+      spoiler:
+        "El profesor Quirrell, aparentemente débil y tímido, es en realidad el anfitrión de Lord Voldemort. Voldemort está buscando la Piedra Filosofal, que se guarda en Hogwarts, para restaurar su forma física y recuperar su poder. Este giro en la trama es crucial para el clímax de la historia, donde Harry y sus amigos deben enfrentarse a Quirrell/Voldemort para proteger la Piedra Filosofal y evitar que caiga en manos del mal.",
+    },
+    {
+      cover: "../assets/img/movs/HP2.webp",
+      title: "Harry Potter y la Cámara Secret",
+      synopsis:
+        "Un antiguo mito parece corroborado cuando una misteriosa presencia comienza a acechar los pasillos de la escuela de magia dejando a sus víctimas petrificadas.",
+      year: 2002,
+      duration: "2h 41m",
+      spoiler:
+        "El heredero de Salazar Slytherin, revelado más adelante en la trama, es Tom Riddle, que se presenta en forma de un recuerdo conservado en un diario mágico. A través de este diario, Tom Riddle manipula a Ginny Weasley para abrir la Cámara   Secreta, liberando al basilisco que petrifica a varios estudiantes y amenaza con matar a los nacidos de muggles en Hogwarts. La resolución de esta trama es crucial para la seguridad de la escuela y para la comprensión más profunda de la conexión entre Harry y Voldemort.",
+    },
+    {
+      cover: "../assets/img/movs/HP3.webp",
+      title: "Harry Potter y el Prisionero de Azkabán",
+      synopsis:
+        "Harry está listo para su tercer año en Hogwarts, pero cuando el terrible Sirius Black escapa de la prisión de Azkaban, el peligro se apodera de él y Harry sabe que, tarde o temprano, Black vendrá a su encuentro.",
+      year: 2004,
+      duration: "2h 22m",
+      spoiler:
+        "Sirius Black, quien ha sido presentado como un peligroso asesino y el responsable de la traición de los padres de Harry, en realidad es inocente. Además, se revela que Peter Pettigrew, quien había sido aparentemente asesinado por Sirius,está vivo y es quien verdaderamente traicionó a los padres de Harry. Este giro en la trama cambia la percepción de Sirius y de todo el incidente relacionado con la muerte de los padres de Harry.",
+    },
+    {
+      cover: "../assets/img/movs/HP4.webp",
+      title: "Harry Potter y el Cáliz de Fuego",
+      synopsis:
+        "Un joven mago se encuentra compitiendo en un peligroso torneo entre escuelas de magia rivales, pero tendrá dificultades al distraerse con pesadillas recurrentes.",
+      year: 2005,
+      duration: "2h 37m",
+      spoiler:
+        "El Cáliz de Fuego, un artefacto mágico que selecciona a los campeones para participar en el Torneo de los Tres Magos, es manipulado para incluir a Harry Potter como un cuarto campeón, a pesar de que no cumplía con los requisitos de edad para participar. Este giro en la trama lleva a Harry a enfrentarse a desafíos mortales y a descubrir una conspiración más oscura detrás de su participación en el torneo.",
+    },
+    {
+      cover: "../assets/img/movs/HP5.webp",
+      title: "Harry Potter y la Órden del Fénix",
+      synopsis:
+        "Con su advertencia sobre el regreso de Lord Voldemort, Harry y Dumbledore son atacados por las autoridades del Ministerio de Magia, mientras que una maga autoritaria toma lentamente el poder en Hogwarts.",
+      year: 2007,
+      duration: "2h 18m",
+      spoiler:
+        "Sirius Black, el padrino de Harry, muere. Durante una batalla en el Ministerio de Magia, Sirius es asesinado por su prima, Bellatrix Lestrange, quien lo lanza a través de un umbral mágico, lo que lo hace caer en un abismo llamado el 'Velos'. Esta pérdida afecta profundamente a Harry, ya que Sirius era una figura paterna para él y su única conexión con su familia de sangre.",
+    },
+    {
+      cover: "../assets/img/movs/HP6.webp",
+      title: "Harry Potter y el Misterio del Príncipe",
+      synopsis:
+        "Harry Potter empieza su sexto año en Hogwarts, descubre un libro 'propiedad del Príncipe Mestizo', y empieza a aprender más sobre el oscuro pasado de Voldemort.",
+      year: 2009,
+      duration: "2h 33m",
+      spoiler:
+        "Severus Snape, quien ha sido un personaje ambiguo durante toda la serie, finalmente mata a Albus Dumbledore, el director de Hogwarts y mentor de Harry. Esta traición aparente por parte de Snape deja a Harry y a los lectores con muchas   preguntas sin respuesta sobre los verdaderos motivos y lealtades de Snape. Este evento marca un punto crucial en la trama y prepara el escenario para el enfrentamiento final entre Harry y Voldemort en el último libro.",
+    },
+    {
+      cover: "../assets/img/movs/HP71.webp",
+      title: "Harry Potter y las Reliquias de la Muerte parte 1",
+      synopsis:
+        "Harry se embarca en una carrera contrarreloj para destruir los Horrocruxes y descubre la existencia de los tres objetos más poderosos del mundo mágico: las reliquias de la muerte.",
+      year: 2010,
+      duration: "2h 26m",
+      spoiler:
+        "Uno de los momentos más tristes es la muerte de Dobby, el elfo doméstico. Dobby muere heroicamente mientras ayuda a Harry, Hermione, Ron y otros prisioneros a escapar de la mansión de los Malfoy. La escena es emotiva, ya que Dobby muere en los brazos de Harry, justo después de lograr su libertad.",
+    },
+    {
+      cover: "../assets/img/movs/HP72.webp",
+      title: "Harry Potter y las Reliquias de la Muerte parte 2",
+      synopsis:
+        "Harry, Ron y Hermione buscan los Horcruxes restantes de Voldemort en su esfuerzo por destruir al Señor Oscuro mientras la batalla final continúa en Hogwarts.",
+      year: 2011,
+      duration: "2h 10m",
+      spoiler:
+        "Uno de los spoilers más impactantes es la revelación de la verdadera lealtad y los sentimientos de Severus Snape. A         través de sus recuerdos, que Harry ve en el Pensadero, se descubre que Snape siempre estuvo enamorado de la madre de Harry, Lily Potter, y que todo lo que hizo, incluyendo su aparente alianza con Voldemort, fue para proteger a Harry en honor a ella. Además, Snape revela que Harry es un Horrocrux involuntario, lo que significa que Harry debe morir para que Voldemort sea completamente mortal.",
+    },
+  ];
+
+  movies.forEach((movie) => {
+    moviesList.innerHTML += `
+            <article class="${movie.title}">
+                <img src="${movie.cover}" alt="imagen de ${movie.name}">
+                <h4>${movie.title}</h4>
+                <div class="mov-data">
+                    <p class="mov-year">${movie.year}</p>
+                    <p class="mov-duration">${movie.duration}</p>
+                </div>
+                <div class="mov-description">
+                    <p>${movie.synopsis}</p>
+                </div>
+                <div class="mov-spoiler">
+                    <button class="spoiler-btn">Alerta de spoiler!!</button>
+                    <p class="mov-spoiler">${movie.spoiler}</p> 
+                </div>    
+            </article>        
+        `;
+  });
+};
+
 
 renderHouses();
+renderSpells();
+renderMovies();
 

@@ -147,6 +147,7 @@ const renderMovies = () => {
 
   const movies = [
     {
+      id: "HP1",
       cover: "../assets/img/movs/HP1.webp",
       title: "Harry Potter y la Piedra Filosofal",
       synopsis:
@@ -157,6 +158,7 @@ const renderMovies = () => {
         "El profesor Quirrell, aparentemente débil y tímido, es en realidad el anfitrión de Lord Voldemort. Voldemort está buscando la Piedra Filosofal, que se guarda en Hogwarts, para restaurar su forma física y recuperar su poder. Este giro en la trama es crucial para el clímax de la historia, donde Harry y sus amigos deben enfrentarse a Quirrell/Voldemort para proteger la Piedra Filosofal y evitar que caiga en manos del mal.",
     },
     {
+      id: "HP2",
       cover: "../assets/img/movs/HP2.webp",
       title: "Harry Potter y la Cámara Secret",
       synopsis:
@@ -167,6 +169,7 @@ const renderMovies = () => {
         "El heredero de Salazar Slytherin, revelado más adelante en la trama, es Tom Riddle, que se presenta en forma de un recuerdo conservado en un diario mágico. A través de este diario, Tom Riddle manipula a Ginny Weasley para abrir la Cámara   Secreta, liberando al basilisco que petrifica a varios estudiantes y amenaza con matar a los nacidos de muggles en Hogwarts. La resolución de esta trama es crucial para la seguridad de la escuela y para la comprensión más profunda de la conexión entre Harry y Voldemort.",
     },
     {
+      id: "HP3",
       cover: "../assets/img/movs/HP3.webp",
       title: "Harry Potter y el Prisionero de Azkabán",
       synopsis:
@@ -177,6 +180,7 @@ const renderMovies = () => {
         "Sirius Black, quien ha sido presentado como un peligroso asesino y el responsable de la traición de los padres de Harry, en realidad es inocente. Además, se revela que Peter Pettigrew, quien había sido aparentemente asesinado por Sirius,está vivo y es quien verdaderamente traicionó a los padres de Harry. Este giro en la trama cambia la percepción de Sirius y de todo el incidente relacionado con la muerte de los padres de Harry.",
     },
     {
+      id: "HP4",
       cover: "../assets/img/movs/HP4.webp",
       title: "Harry Potter y el Cáliz de Fuego",
       synopsis:
@@ -187,6 +191,7 @@ const renderMovies = () => {
         "El Cáliz de Fuego, un artefacto mágico que selecciona a los campeones para participar en el Torneo de los Tres Magos, es manipulado para incluir a Harry Potter como un cuarto campeón, a pesar de que no cumplía con los requisitos de edad para participar. Este giro en la trama lleva a Harry a enfrentarse a desafíos mortales y a descubrir una conspiración más oscura detrás de su participación en el torneo.",
     },
     {
+      id: "HP5",
       cover: "../assets/img/movs/HP5.webp",
       title: "Harry Potter y la Órden del Fénix",
       synopsis:
@@ -197,6 +202,7 @@ const renderMovies = () => {
         "Sirius Black, el padrino de Harry, muere. Durante una batalla en el Ministerio de Magia, Sirius es asesinado por su prima, Bellatrix Lestrange, quien lo lanza a través de un umbral mágico, lo que lo hace caer en un abismo llamado el 'Velos'. Esta pérdida afecta profundamente a Harry, ya que Sirius era una figura paterna para él y su única conexión con su familia de sangre.",
     },
     {
+      id: "HP6",
       cover: "../assets/img/movs/HP6.webp",
       title: "Harry Potter y el Misterio del Príncipe",
       synopsis:
@@ -207,6 +213,7 @@ const renderMovies = () => {
         "Severus Snape, quien ha sido un personaje ambiguo durante toda la serie, finalmente mata a Albus Dumbledore, el director de Hogwarts y mentor de Harry. Esta traición aparente por parte de Snape deja a Harry y a los lectores con muchas   preguntas sin respuesta sobre los verdaderos motivos y lealtades de Snape. Este evento marca un punto crucial en la trama y prepara el escenario para el enfrentamiento final entre Harry y Voldemort en el último libro.",
     },
     {
+      id: "HP71",
       cover: "../assets/img/movs/HP71.webp",
       title: "Harry Potter y las Reliquias de la Muerte parte 1",
       synopsis:
@@ -217,6 +224,7 @@ const renderMovies = () => {
         "Uno de los momentos más tristes es la muerte de Dobby, el elfo doméstico. Dobby muere heroicamente mientras ayuda a Harry, Hermione, Ron y otros prisioneros a escapar de la mansión de los Malfoy. La escena es emotiva, ya que Dobby muere en los brazos de Harry, justo después de lograr su libertad.",
     },
     {
+      id: "HP72",
       cover: "../assets/img/movs/HP72.webp",
       title: "Harry Potter y las Reliquias de la Muerte parte 2",
       synopsis:
@@ -230,7 +238,7 @@ const renderMovies = () => {
 
   movies.forEach((movie) => {
     moviesList.innerHTML += `
-            <article class="${movie.title}">
+            <article class="${movie.id}">
                 <img src="${movie.cover}" alt="imagen de ${movie.name}">
                 <h4>${movie.title}</h4>
                 <div class="mov-data">
@@ -249,8 +257,73 @@ const renderMovies = () => {
   });
 };
 
+const renderBooks = () => {
+  const booksList = document.getElementById("books-list");
+
+  const books = [
+    {
+      id: "HPPiedra",
+      cover: "../assets/img/books/HPylPF.webp",
+      title: "Harry Potter y la Piedra Filosofal",
+      link: "https://www.penguinlibros.com/ar/tematicas/138821-libro-harry-potter-y-la-piedra-filosofal-harry-potter-1-9788498380170?mot_tcid=661499c1-da17-4079-9552-ae34aeb5b2e5",
+    },
+    {
+      id: "HPCamara",
+      cover: "../assets/img/books/HPylaCS.webp",
+      title: "Harry Potter y la Cámara Secrerta",
+      link: "https://www.penguinlibros.com/ar/tematicas/138824-libro-harry-potter-y-la-camara-secreta-harry-potter-2-9788498380187?mot_tcid=c4a3f0be-fd20-4c23-80f0-183c20d3851b",
+    },
+    {
+      id: "HPPrisionero",
+      cover: "../assets/img/books/HPyelPdA.webp",
+      title: "Harry Potter y el Prisionero de Azkabán",
+      link: "https://www.penguinlibros.com/ar/tematicas/138827-libro-harry-potter-y-el-prisionero-de-azkaban-harry-potter-3-9788498380194?mot_tcid=45c04d23-43ab-4263-8981-a392ae47c925",
+    },
+    {
+      id: "HPCaliz",
+      cover: "../assets/img/books/HPyelCdF.webp",
+      title: "Harry Potter y el Cáliz de Fuego",
+      link: "https://www.penguinlibros.com/ar/tematicas/138830-libro-harry-potter-y-el-caliz-de-fuego-harry-potter-4-9788498380200?mot_tcid=15b1ecff-e3a3-4f03-b266-d6f045ed9709",
+    },
+    {
+      id: "HPOrden",
+      cover: "../assets/img/books/HPylaOdF.webp",
+      title: "Harry Potter y la Órden del Fénix",
+      link: "https://www.penguinlibros.com/ar/tematicas/138833-libro-harry-potter-y-la-orden-del-fenix-harry-potter-5-9788498380217?mot_tcid=8c77071d-e00b-4d95-a41f-e22f722a4307",
+    },
+    {
+      id: "HPPrincipe",
+      cover: "../assets/img/books/HPyelMdP.webp",
+      title: "Harry Potter y el Misterio del Príncipe",
+      link: "https://www.penguinlibros.com/ar/tematicas/138147-libro-harry-potter-y-el-misterio-del-principe-harry-potter-6-9788478889921?mot_tcid=73e9031b-f6e4-4886-bbc0-13a3a4026580",
+    },
+    {
+      id: "HPReliquias",
+      cover: "../assets/img/books/HPylRdlM.webp",
+      title: "Harry Potter y las Reliquias de la Muerte",
+      link: "https://www.penguinlibros.com/ar/tematicas/166024-libro-harry-potter-y-las-reliquias-de-la-muerte-harry-potter-7-9789878000190?mot_tcid=afad58d3-4a6e-44c5-b091-18bcf90e4739",
+    },
+  ];
+
+   books.forEach((book) => {
+     booksList.innerHTML += `
+            <article class="${book.id}">
+              <div class="book-cover">
+                <img src="${book.cover}" alt="imagen de ${book.title}">
+              </div>
+              <div class="book-data">
+                <h4>${book.title}</h4>
+                <p>Editorial Salamandra</p>
+              </div>
+              <div class="book-link">
+                    <button class="spoiler-btn" <a href=="${book.link}">Ir a comprar</a></button>
+              </div>    
+            </article>        
+        `;
+   });
+};  
 
 renderHouses();
 renderSpells();
 renderMovies();
-
+renderBooks();

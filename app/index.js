@@ -166,7 +166,7 @@ const renderMovies = () => {
     {
       id: "HP2",
       cover: "../assets/img/movs/HP2.webp",
-      title: "Harry Potter y la Cámara Secret",
+      title: "Harry Potter y la Cámara Secreta",
       synopsis:
         "Un antiguo mito parece corroborado cuando una misteriosa presencia comienza a acechar los pasillos de la escuela de magia dejando a sus víctimas petrificadas.",
       year: 2002,

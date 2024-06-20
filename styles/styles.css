@@ -113,6 +113,13 @@ main {
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
 }
 
+.card-container .front-content i {
+  position:absolute;
+  top: 10px;
+  left: 5px;
+  font-size: 2em;
+}
+
 .card-container-spells {
     width: 300px;
     height: 330px;
@@ -129,6 +136,11 @@ main {
 .front-content-spells p {
   padding: 20px;
   font-size: 0.9em;
+}
+
+.front-content-spells i {
+  padding: 20px;
+  font-size: 2em;
 }
 
 .content {
@@ -518,7 +530,6 @@ article button a {
 @media (max-width: 500px) {
   #houses-list {
     grid-template-columns: repeat(1, 1fr);
-    width: 100%;
   }
 
   .spells-list {

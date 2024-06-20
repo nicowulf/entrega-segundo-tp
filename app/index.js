@@ -49,6 +49,7 @@ const renderHouses = () => {
                 <div class="card-${house.name}">
                   <div class="front-content">
                      <img src="${house.img}" alt="imagen de ${house.name}">
+                     <i class='bx bxs-message-alt-add'></i>
                   </div>
                   <div class="content">
                      <p class="phrase">${house.phrase}</p>
@@ -138,6 +139,7 @@ const renderSpells = () => {
                   <div class="front-content-spells">
                      <h4>${spell.name}</h4>
                      <p>${spell.description}</p>
+                     <i class='bx bxs-message-alt-add'></i>
                   </div>
                   <div class="content">
                      <img src="${spell.img}" alt="imagen de ${spell.name}">

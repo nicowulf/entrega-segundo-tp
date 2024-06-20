@@ -1,5 +1,5 @@
 main {
-  background: url(../assets/img/pattern/patronHP.webp);
+  background: url(../assets/img/pattern/hp-pattern-dark.webp);
 }
 
 .s-intro {
@@ -187,22 +187,12 @@ main {
   opacity: 0;
 }
 
-.s-spells {
-  background: url(../assets/img/walls/wallpaperflare.com_wallpaper2.webp);
-  background-size: contain;
-  padding: 2.3em;
-}
-
 .spells-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   align-items: center;
   justify-items: center;
-}
-
-.s-movies {
-  padding: 0 2.5rem 2.5rem 2.5rem;
 }
 
 #movies-list {
@@ -215,7 +205,7 @@ main {
   min-width: 65%;
   min-height:max-content;
   border-radius: 1rem;
-  background-color: rgba(31, 41, 55, 1);
+  background-color: var(--secondary-color-dark);
   padding: 1rem;
 }
 
@@ -304,12 +294,6 @@ main {
   font-size: 0.9em;
 }
 
-.s-books {
-  background: url(../assets/img/walls/wallpaperflare.com_wallpaper3.webp);
-  background-size: contain;
-  padding-bottom: 2em;
-}
-
 #books-list {
   display: flex;
   flex-wrap: wrap;
@@ -346,10 +330,7 @@ article button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.s-auth {
-  padding-bottom: 2em;
+  cursor: pointer;
 }
 
 .auth-bio {
@@ -367,11 +348,12 @@ article button {
 }
 
 .bio-img {
-  border: 1px solid rgb(50, 60, 205)
+    background: rgba(107, 103, 103, 0.6);
+    padding: 1em;
 }
 
 .bio-info {
-  background: rgba(107, 103, 103, 0.6);
+  background: rgba(107, 103, 103, 0.8);
   padding: 2.5em;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px

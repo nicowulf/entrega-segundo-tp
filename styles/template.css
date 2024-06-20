@@ -18,12 +18,11 @@
     --primary-color-dark: #121212;
     --secondary-color-dark: #4a4a4a;
     --tertiary-color-dark: #2b2e2c;
-    --complementary-color-dark: #f1cb3e;
-    --text-color-dark: #f2f2f2;
     --primary-color-light: #78afcf;
     --secondary-color-light: #dee1e2;
     --tertiary-color-light: #9dd0ee;
-    --complementary-color-light: #f1cb3e;
+    --complementary-color: #f1cb3e;
+    --text-color-dark: #f2f2f2;
     --text-color-light: #141414;
     --font-family-titles: HARRYP,
         'Gill Sans',
@@ -38,6 +37,16 @@
         'Gill Sans MT',
         'Trebuchet MS',
         sans-serif;
+}
+
+main {
+    text-align: center;
+    background-color: var(--secondary-color-dark);
+    color: var(--text-color-dark);
+}
+
+section {
+    padding: 2.2em;
 }
 
 h1,
@@ -74,22 +83,19 @@ nav ul li a {
     font-size: 2rem;
 }
 
-main {
-    text-align: center;
-    background-color: var(--secondary-color-dark);
-    color: var(--text-color-dark);
-}
-
 ul li {
     list-style: none;
 }
 
-a {
-    text-decoration: none; 
-}
-
 h2 {
     padding: 25px;
+    color: var(--complementary-color);
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+a {
+    text-decoration: none; 
 }
 
 footer {

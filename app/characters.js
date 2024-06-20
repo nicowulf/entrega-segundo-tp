@@ -17,12 +17,12 @@ fetch("https://hp-api.onrender.com/api/characters")
         
         $div.innerHTML += `
           <div class="card">
-            <div class="card_img">
+            <div class="card-img">
               <img src="${character.image ? character.image :
                "../assets/img/defaultChar/harry-potter-def-char.webp"
               }" alt="imagen de ${character.name}">
             </div>
-            <div>
+            <div class="card-info">
               <h4>${character.name}</h4>
               <p><i>Casa</i>: ${character.house}</p>
               <p><i>Especie</i>: ${character.species}</p>

@@ -340,7 +340,7 @@ const renderBooks = () => {
                 <p>Editorial Salamandra</p>
               </div>
               <div class="book-link">
-                <button class="link-btn" <a href="${book.link}" target= "_blank">Ir a comprar</a></button>
+                <button class="link-btn"><a href="${book.link}" target="_blank">Ir a comprar</a></button>
               </div>    
             </article>        
         `;

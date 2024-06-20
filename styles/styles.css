@@ -337,6 +337,14 @@ article button {
   cursor: pointer;
 }
 
+article button a {
+  font-family: var(--font-family-texts);
+  color: var(--text-color-light);
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
 .auth-bio {
   display: flex;
   align-items: center;

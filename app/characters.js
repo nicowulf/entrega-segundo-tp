@@ -1,6 +1,6 @@
 
 const $div = document.getElementById("grid");
-const $input = document.getElementById("filter");
+const $input = document.getElementById("query");
 
 
 fetch("https://hp-api.onrender.com/api/characters")

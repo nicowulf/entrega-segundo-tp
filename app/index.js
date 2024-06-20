@@ -133,14 +133,18 @@ const renderSpells = () => {
     spells.forEach((spell) => {
         spellsList.innerHTML += `
             <li>
-                <div>
-                    <h4>${spell.name}</h4>
-                    <p>${spell.description}</p>
-                    <img src="${spell.img}" alt="imagen de ${spell.name}">
+              <div class= "card-container-spells">
+                <div class="card">
+                  <div class="front-content-spells">
+                     <h4>${spell.name}</h4>
+                     <p>${spell.description}</p>
+                  </div>
+                  <div class="content">
+                     <img src="${spell.img}" alt="imagen de ${spell.name}">
+                  </div>
                 </div>
-            </li>
-        
-        `;
+              </div>
+            </li>`;
     })    
 };
 

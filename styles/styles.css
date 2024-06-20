@@ -521,11 +521,6 @@ article button a {
     width: 100%;
   }
 
-  .card-container, .card-container-spells {
-    width: 315px;
-    height: max-content;
-  }
-
   .spells-list {
     grid-template-columns: repeat(1, 1fr);
     }

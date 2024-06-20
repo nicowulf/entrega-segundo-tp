@@ -96,9 +96,6 @@ footer {
     background-color: var(--primary-color-dark);
     color: var(--text-color-dark);
     text-align: center;
-    margin-top: 30px;
     padding: 1em 0;
-    position: fixed;
     width: 100%;
-    bottom: 0;
 }

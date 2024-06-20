@@ -243,23 +243,41 @@ const renderMovies = () => {
   ];
 
   movies.forEach((movie) => {
-    moviesList.innerHTML += `
-            <article class="${movie.id}">
-                <img src="${movie.cover}" alt="imagen de ${movie.name}">
-                <h4>${movie.title}</h4>
-                <div class="mov-data">
-                    <p class="mov-year">${movie.year}</p>
-                    <p class="mov-duration">${movie.duration}</p>
+    moviesList.innerHTML += `      
+            <div class="movie-card">
+              <div class="info">
+                <div class="image">
+                  <img src="${movie.cover}" alt="imagen de ${movie.title}">
                 </div>
-                <div class="mov-description">
-                    <p>${movie.synopsis}</p>
+                  <div class="infos">
+                    <div class="name">
+                      <h4>${movie.title}</h4>
+                    </div>
+                    <div class="stats">
+                      <p class="flex flex-col">
+                        Año
+                        <span class="state-value">
+                          ${movie.year}
+                        </span>
+                      </p>
+                      <p class="flex">
+                        Duración
+                        <span class="state-value">
+                          ${movie.duration}
+                        </span>
+                      </p>                    
+                    </div>
+                    <div class="synopsis">
+                      <p>${movie.synopsis}</p> 
+                    </div>
+                    </div>
+                  </div>
+                  <div>
+                    <button class="request" type="button">Alerta de spoiler!!</button>
+                    <p class="mov-spoiler" >${movie.spoiler}</p> 
+                  </div>
                 </div>
-                <div class="mov-spoiler">
-                    <button class="spoiler-btn">Alerta de spoiler!!</button>
-                    <p class="mov-spoiler">${movie.spoiler}</p> 
-                </div>    
-            </article>        
-        `;
+            </div>`;
   });
 };
 
@@ -322,7 +340,7 @@ const renderBooks = () => {
                 <p>Editorial Salamandra</p>
               </div>
               <div class="book-link">
-                    <button class="link-btn" <a href="${book.link}" target= "_blank">Ir a comprar</a></button>
+                <button class="link-btn" <a href="${book.link}" target= "_blank">Ir a comprar</a></button>
               </div>    
             </article>        
         `;
